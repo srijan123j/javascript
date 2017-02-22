@@ -25,6 +25,7 @@ var six = function() {
 var seven = new Number(12);
 var eight = new String('Eight');
 var nine  = new Array("Saab", "Volvo", "BMW");
+// http://javascript.info/tutorial/number-math
 
 //typeof tutesnode
 // console.log(1, typeof one);

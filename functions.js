@@ -1,5 +1,6 @@
 function first() {
   console.log('first Function called.');
+  return 'Hi there';
 }
 /*setTimeout is used to delay in printing or returning
   syntax  setTimeout(function,time_in_ms)*/
@@ -7,6 +8,7 @@ function second() {
   setTimeout(function() {
     console.log('second function called.');
   }, 2000);
+  return 'second return';
 }
 
 function third() {
@@ -16,9 +18,9 @@ function third() {
   }, 2000);
 }
 //forexample
-third();
-second();
-first();
+// console.log(third());
+// console.log(second());
+// console.log(first());
 /*above code output
  first Function called.
  third function called. print
@@ -26,7 +28,7 @@ first();
  */
 
 //otherexample
-console.log(third());// it will return "undefined" as it will not wait for 2 sec for return
+// console.log(third());// it will return "undefined" as it will not wait for 2 sec for return
 /*output of above line
  undefined
  third function called. print
@@ -42,7 +44,7 @@ function somethingCallback(callbackValue) {
     console.log(callbackValue);
 }
 //calling main function
-something(5,somethingCallback);//output -  100
+// something(5,somethingCallback);//output -  100
 //in this we are passing a callback function as parameter of main function
 //------------------------------------------------------------------------------------------------
 //callback function with two argument
@@ -52,9 +54,9 @@ function fourth(value, callback) {
     }, 1000);
 }
 //in this instead of defining callback function we directly called by defining function during calling
-fourth(10, function (value1, value2) {
-    console.log(value1, value2);}
-    );
+// fourth(10, function (value1, value2) {
+//     console.log(value1, value2);
+// });
 /*output -  20 30
 callback is used so that it can return value after the delay also.
 but in above example "undefined" is return due to delay*/
@@ -71,7 +73,7 @@ function fifth (value, success, error) {//success & error are name given to call
 
 //there is two callbacks so we have to pass two functions()
 fifth(
-  5,
+  15,
   function(str) {
     console.log('first callback', str);
   },

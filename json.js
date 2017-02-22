@@ -57,12 +57,12 @@ var json = {
 
   //Array of functions.
   arrayOfFunction: [
-    function() {
+    function first() {
       console.log('This is an array function one');
       return 'This is an return string from an array function one.';
     },
 
-    function() {
+    function second() {
       console.log('This is an array function two');
     }
   ],
@@ -199,22 +199,22 @@ given below*/
 var arrayOffunctions = json.arrayOfFunction;
 
 //First method.
-arrayOffunctions[0]();
-arrayOffunctions[1]();
+// arrayOffunctions[0]();
+// arrayOffunctions[1]();
 
 //Second method
 
 /*it will also use return values*/
-arrayOffunctions.map(function(func, index) {
-   console.log(index, func());
-});
+// arrayOffunctions.map(function(func, index) {
+//    console.log(index, func());
+// });
 
 //-----------------------------------------------------------------------------------------------
 
 
 //calling objectoffunctions
-json.objectOfFunctions.funcOne();
-json.objectOfFunctions.funcTwo();
+// json.objectOfFunctions.funcOne();
+// json.objectOfFunctions.funcTwo();
 
 
 
